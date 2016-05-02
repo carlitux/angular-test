@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script type="text/javascript" charset="utf-8">
+window.PLANS = [{"id":1,"name":"Básico","duration":7,"ammount":10,"videos":null,"priority":"normal","photos":1,"created_at":"2016-04-29T03:08:39.298Z","updated_at":"2016-04-29T03:33:19.219Z","asciiName":"basico"},{"id":2,"name":"Regular","duration":28,"ammount":130,"videos":null,"priority":"normal","photos":3,"created_at":"2016-04-29T03:32:05.031Z","updated_at":"2016-04-29T03:32:05.031Z","asciiName":"regular"},{"id":3,"name":"Óptimo","duration":56,"ammount":50,"videos":null,"priority":"featured","photos":9,"created_at":"2016-04-29T03:32:50.047Z","updated_at":"2016-05-01T02:53:41.183Z","asciiName":"optimo"},{"id":4,"name":"Ultimate","duration":90,"ammount":100,"videos":true,"priority":"premium","photos":50,"created_at":"2016-04-29T03:52:54.970Z","updated_at":"2016-04-29T03:52:54.970Z","asciiName":"ultimate"}];
+window.SELECTED_PLAN = {"id":1,"name":"Básico","duration":7,"ammount":10,"videos":null,"priority":"normal","photos":1,"created_at":"2016-04-29T03:08:39.298Z","updated_at":"2016-04-29T03:33:19.219Z","asciiName":"basico"};
+    </script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <p>Hello {{selectedPlan.name}}!</p>
+    <plan-selector plans='plans' selected-plan='selectedPlan'></plan-selector>
+
+    <script src="/javascript/app.js"></script>
+  </body>
+
+</html>

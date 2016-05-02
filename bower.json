@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.2.1",
+    "jquery": "~2.2.0",
+    "what-input": "~1.1.2",
+    "motion-ui": "~1.1.0",
+    "slick-carousel": "^1.5.9",
+    "fancybox": "^2.1.5",
+    "pwstrength-foundation": "^1.2.8",
+    "jsdom": "^8.4.0"
+  }
+}

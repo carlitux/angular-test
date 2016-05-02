@@ -1,0 +1,18 @@
+{
+  "libs": [
+    "chai",
+    "browser",
+    "ecma5",
+    "ecma6",
+    "underscore"
+  ],
+  "loadEagerly": [
+    "app/**/*.js",
+    "config/**/*.js",
+    "bin/**/*.js"
+  ],
+  "plugins": {
+    "node": {},
+    "node-express": {}
+  }
+}

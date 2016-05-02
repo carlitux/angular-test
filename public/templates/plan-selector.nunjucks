@@ -1,0 +1,16 @@
+<div class="plans-container expanded">
+  <div class="plan-column expanded">
+    <h4>Deseas cambiar de plan?</h4>
+    <form class="cambio-plan">
+      <label>
+        Selecciona tu plan:
+        <select
+          ng-model='selectedPlanID'
+          ng-change='onChangePlan()'
+          ng-options='plan.id as "Plan " + plan.name + " - $" + plan.ammount for plan in plans'
+          >
+        </select>
+      </label>
+    </form>
+  </div>
+</div>
