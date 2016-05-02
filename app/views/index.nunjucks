@@ -11,7 +11,7 @@ window.SELECTED_PLAN = {"id":1,"name":"Básico","duration":7,"ammount":10,"video
   </head>
 
   <body ng-controller="MainCtrl">
-    <p>Hello {{selectedPlan.name}}!</p>
+    <p>Hello <% selectedPlan.name %>!</p>
     <plan-selector plans='plans' selected-plan='selectedPlan'></plan-selector>
 
     <script src="/javascript/app.js"></script>

@@ -1,6 +1,10 @@
-
 angular.module('plunker', [])
-
+  .config([ '$interpolateProvider',
+    function($interpolateProvider) {
+      $interpolateProvider.startSymbol('<%');
+      $interpolateProvider.endSymbol('%>');
+    }
+  ])
   .controller('MainCtrl', function($scope) {
     $scope.plans = window.PLANS;
     $scope.selectedPlan = window.SELECTED_PLAN;
