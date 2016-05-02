@@ -3,6 +3,8 @@ import angular from 'angular';
 angular.module('plunker', [])
   .config([ '$interpolateProvider',
     function($interpolateProvider) {
+      // This will add new interpolation when {{ and }} is used by another
+      // template engine on server
       $interpolateProvider.startSymbol('<%');
       $interpolateProvider.endSymbol('%>');
     }
